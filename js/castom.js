@@ -6,6 +6,7 @@ $('.responsive').slick({
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow:`<div class="btn-next">
     <button><i class="fa-solid fa-arrow-right"></i></button>
 </div>`,
