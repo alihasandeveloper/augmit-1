@@ -1,0 +1,58 @@
+.navber {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(/Image/bg/bg-1.png);
+    padding: 24px 0;
+    background-repeat: no-repeat;
+    position: sticky;
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img {
+            height: 48px;
+            width: 48px;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+            font-family: $headerFont;
+        }
+    }
+    .nav-menu {
+        ul {
+            display: flex;
+            gap: 32px;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-family: $secondaryFont;
+                    color: #141F39;
+                }
+            }
+        }
+    }
+    .nav-btn {
+        background-color: $primaryBtnColor;
+        padding: 20px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-family: $secondaryFont;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &:hover {
+            background-color: $hoverColor;
+            transition: 0.5s;
+            
+        }
+    }
+
+}

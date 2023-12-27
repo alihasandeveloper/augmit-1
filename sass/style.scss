@@ -1,0 +1,18 @@
+$primaryFont: 'DM Sans', sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
+$headerFont: 'Urbanist', sans-serif;
+$primaryBtnColor: #141F39;
+$hoverColor: #6E65E5;
+$orangeColor: #FF7F63;
+
+
+@import "header";
+@import "home-page";
+
+* , *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
