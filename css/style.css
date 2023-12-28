@@ -27,6 +27,7 @@
 }
 .navber .nav-menu ul li {
   list-style: none;
+  position: relative;
 }
 .navber .nav-menu ul li a {
   text-decoration: none;
@@ -179,6 +180,91 @@
   }
   100% {
     right: 0;
+  }
+}
+.about-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 120px 0;
+}
+.about-us-container .about-us-img {
+  background-image: url(/Image/circle-bg.png);
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 150px;
+}
+.about-us-container .about-us-img img {
+  width: 100%;
+}
+.about-us-container .about-us-img .person-animation {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  animation: moveUpDown2 4s linear infinite;
+}
+.about-us-container .about-us-img .groth-animation {
+  position: absolute;
+  bottom: -80px;
+  right: -75px;
+  animation: moveUpDown3 4s linear infinite;
+}
+.about-us-container .about-us-content h6 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  color: #FF7F63;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.about-us-container .about-us-content h2 {
+  font-size: 54px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.about-us-container .about-us-content p {
+  font-size: 16px;
+  color: #525256;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 48px;
+}
+.about-us-container .about-us-content .about-us-content-card {
+  display: flex;
+  gap: 20px;
+}
+.about-us-container .about-us-content .about-us-content-card img {
+  width: 70px;
+  height: 70px;
+}
+.about-us-container .about-us-content .about-us-content-card h3 {
+  font-size: 24px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+}
+
+@keyframes moveUpDown2 {
+  0% {
+    top: -20px;
+  }
+  50% {
+    top: -40px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+@keyframes moveUpDown3 {
+  0% {
+    bottom: -40px;
+  }
+  50% {
+    bottom: -80px;
+  }
+  100% {
+    bottom: -40px;
   }
 }
 *, *::after, *::before {

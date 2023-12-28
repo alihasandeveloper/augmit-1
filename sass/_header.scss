@@ -26,12 +26,27 @@
             gap: 32px;
             li {
                 list-style: none;
+                position: relative;
+               
                 a {
                     text-decoration: none;
                     font-size: 18px;
                     font-family: $secondaryFont;
                     color: #141F39;
                 }
+                // .dropdown-content {
+                //     position: absolute;
+                //     top: 0;
+                //     width: 150px;
+                //     display: block;
+                //     border: 2px solid;
+                //     padding: 20px 0 0 0;
+
+                   
+                //     li {
+                        
+                //     }
+                // }
             }
         }
     }
