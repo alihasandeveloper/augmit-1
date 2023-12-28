@@ -189,7 +189,7 @@
   padding: 120px 0;
 }
 .about-us-container .about-us-img {
-  background-image: url(/Image/circle-bg.png);
+  background-image: url(Image/circle-bg.png);
   background-position: center;
   align-items: center;
   background-repeat: no-repeat;
