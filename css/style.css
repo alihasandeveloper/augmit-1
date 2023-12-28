@@ -267,6 +267,59 @@
     bottom: -40px;
   }
 }
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  background-color: #5F54D3;
+  padding: 80px 0;
+}
+.rating-container .rating-clints {
+  padding-right: 100px;
+}
+.rating-container .rating-clints h2 {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.rating-container .rating-clints p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+.rating-container .rating-star {
+  display: flex;
+  gap: 64px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  padding-left: 150px;
+}
+.rating-container .rating-star div h2 {
+  color: #fff;
+  font-size: 54px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+}
+.rating-container .rating-star div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px 0;
+  letter-spacing: 1.5px;
+}
+.rating-container .rating-star div div {
+  padding-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+.rating-container .rating-star div div a {
+  color: #FDD540;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
