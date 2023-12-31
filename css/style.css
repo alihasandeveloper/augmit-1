@@ -319,6 +319,115 @@
   color: #FDD540;
 }
 
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 120px 0;
+}
+.service-container .service-content {
+  position: relative;
+}
+.service-container .service-content h6 {
+  color: #FF7F63;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.service-container .service-content h3 {
+  font-size: 54px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+  color: #141F39;
+  margin-bottom: 16px;
+}
+.service-container .service-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #525256;
+  margin-bottom: 40px;
+}
+.service-container .service-content a {
+  color: #fff;
+  background-color: #FF7F63;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.service-container .service-content a:hover {
+  background-color: #141F39;
+  transition: all 0.5s;
+}
+.service-container .service-content .animation-img {
+  position: absolute;
+  bottom: -80px;
+  right: 30px;
+  animation: moveUpDown4 4s 2s ease-in-out infinite;
+}
+.service-container .service-card-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.service-container .service-card-section .service-card {
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.2);
+}
+.service-container .service-card-section .service-card img {
+  width: 74px;
+  height: 64px;
+}
+.service-container .service-card-section .service-card h5 {
+  font-size: 24px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  color: #141F39;
+  margin-top: 20px;
+}
+.service-container .service-card-section .service-card p {
+  font-family: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #525256;
+  margin: 8px 0 20px 0;
+}
+.service-container .service-card-section .service-card a {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: #141F39;
+  font-weight: 700;
+}
+.service-container .service-card-section .service-card a:hover {
+  color: #FF7F63;
+  transition: all 0.5s;
+}
+
+@keyframes moveUpDown4 {
+  0% {
+    transform: skew(0deg, 20deg);
+  }
+  25% {
+    transform: skew(-50deg, 20deg);
+  }
+  50% {
+    transform: skew(-40deg, 20deg);
+  }
+  75% {
+    transform: skew(-50deg, 20deg);
+  }
+  100% {
+    transform: skew(0deg, 20deg);
+  }
+}
 *, *::after, *::before {
   margin: 0;
   padding: 0;
