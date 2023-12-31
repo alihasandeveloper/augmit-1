@@ -63,9 +63,22 @@
             padding: 40px;
             border-radius: 24px;
             box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.20);
+            transition: all 0.5s;
+            &:hover {
+                transform: scale(1.11);
+                transition: all 0.5s;
+                img {
+                    transform: rotateY(1turn);
+                }
+            }
             img {
                 width: 74px;
                 height: 64px;
+                transition: all 0.5s;
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all 0.5s;
+                }
             }
             h5 {
                 font-size: 24px;

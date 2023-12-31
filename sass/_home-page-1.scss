@@ -1,0 +1,129 @@
+.home-page-one-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+    gap: 80px;
+    background: linear-gradient(76deg, #FFF 0%, #FFEDE9 100%);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    .home-page-one-img {
+        // width: 100%;
+        position: relative;
+        transition: 2s;
+
+        div {
+            position: absolute;
+            bottom: 0;
+            left: -55px;
+            animation: moveUpDown6 4s ease-in-out infinite;
+        }
+    }
+
+    .home-page-one-content {
+        h6 {
+            font-size: 16px;
+            font-weight: 700;
+            color: $orangeColor;
+            font-family: $headerFont;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            color: $primaryBtnColor;
+            font-family: $headerFont;
+            font-weight: 800;
+            margin-bottom: 16px;
+            font-size: 54px;
+
+        }
+
+        p {
+            color: $grayColor;
+            font-family: $secondaryFont;
+            font-size: 18px;
+            margin-bottom: 32px;
+            color: #525256;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            li {
+                color: $primaryBtnColor;
+                font-family: $secondaryFont;
+                font-size: 18px;
+                margin-bottom: 15px;
+
+                span {
+                    color: #FFF;
+                    background-color: $hoverColor;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    margin-right: 10px;
+                    width: 18px;
+                    height: 18px;
+                    padding: 8px;
+                }
+            }
+        }
+
+        a {
+            color: #fff;
+            background-color: #FF7F63;
+            padding: 20px 30px;
+            text-decoration: none;
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $primaryBtnColor;
+                transition: all 0.5s;
+            }
+        }
+
+        div {
+            position: absolute;
+            top: -350px;
+            right: -55px;
+            animation: moveUpDown5 4s ease-in-out infinite;
+        }
+    }
+}
+
+
+@keyframes moveUpDown5 {
+    0% {
+        top: -350px;
+        right: -50px;
+
+    }
+
+
+
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes moveUpDown6 {
+    0% {
+        left: -55px;
+    }
+    50% {
+        left: -40px;
+    }
+    100% {
+        left: -55px;
+    }
+}

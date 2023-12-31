@@ -4,6 +4,7 @@ $headerFont: 'Urbanist', sans-serif;
 $primaryBtnColor: #141F39;
 $hoverColor: #6E65E5;
 $orangeColor: #FF7F63;
+$grayColor: #525256;
 
 
 @import "header";
@@ -11,6 +12,9 @@ $orangeColor: #FF7F63;
 @import "about-us";
 @import "rating-page";
 @import "service-page";
+@import "home-page-1";
+@import "work-process";
+@import "project-page";
 
 
 
@@ -18,6 +22,10 @@ $orangeColor: #FF7F63;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+*::selection {
+    background-color: #6E65E5;
+    color: #fff;
 }
 
 

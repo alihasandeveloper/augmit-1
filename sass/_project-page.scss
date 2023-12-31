@@ -1,0 +1,114 @@
+.project-container {
+    padding-bottom: 120px;
+
+    .project-content {
+        display: flex;
+        justify-content: space-around;
+
+        // align-items: center;
+        .project-heading {
+            h6 {
+                color: $orangeColor;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                font-family: $headerFont;
+            }
+
+            h3 {
+                font-size: 54px;
+                font-weight: 700;
+                font-family: $headerFont;
+            }
+        }
+
+        .project-btn {
+            align-self: self-end;
+            padding-bottom: 18px;
+
+            a {
+                color: #fff;
+                font-size: 18px;
+                font-family: $secondaryFont;
+                background-color: $orangeColor;
+                padding: 20px 32px;
+                text-decoration: none;
+                border-radius: 50px;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: $primaryBtnColor;
+                }
+            }
+        }
+    }
+
+    .project-card-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 56px;
+
+        .project-card {
+            box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.20);
+            border-radius: 24px 10px;
+            overflow: hidden;
+            position: relative;
+
+
+            .card-content {
+
+                overflow: hidden;
+                width: 100%;
+                // height: 270px;
+                img {
+                  
+                    transition: 0.5s;
+                    overflow: hidden;
+                    &:hover {
+                        transform: scale(1.08);
+                    }
+                }
+
+            }
+
+            h3 {
+                font-size: 24px;
+                font-family: $headerFont;
+                font-weight: 800;
+                margin: 20px 0 20px 20px;
+            }
+
+            p {
+                font-size: 18px;
+                color: $grayColor;
+                font-family: $secondaryFont;
+                margin: 0 0 20px 20px;
+            }
+
+            .right-arrow {
+                position: absolute;
+                bottom: 83px;
+                right: 40px;
+                width: 50px;
+                height: 50px;
+
+                a {
+                    background-color: $hoverColor;
+                    padding: 20px 24px;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 20px;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: $primaryBtnColor;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

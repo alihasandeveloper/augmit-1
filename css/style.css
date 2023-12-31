@@ -380,10 +380,23 @@
   padding: 40px;
   border-radius: 24px;
   box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.2);
+  transition: all 0.5s;
+}
+.service-container .service-card-section .service-card:hover {
+  transform: scale(1.11);
+  transition: all 0.5s;
+}
+.service-container .service-card-section .service-card:hover img {
+  transform: rotateY(1turn);
 }
 .service-container .service-card-section .service-card img {
   width: 74px;
   height: 64px;
+  transition: all 0.5s;
+}
+.service-container .service-card-section .service-card img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 .service-container .service-card-section .service-card h5 {
   font-size: 24px;
@@ -428,8 +441,338 @@
     transform: skew(0deg, 20deg);
   }
 }
+.home-page-one-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+  gap: 80px;
+  background: linear-gradient(76deg, #FFF 0%, #FFEDE9 100%);
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.home-page-one-container .home-page-one-img {
+  position: relative;
+  transition: 2s;
+}
+.home-page-one-container .home-page-one-img div {
+  position: absolute;
+  bottom: 0;
+  left: -55px;
+  animation: moveUpDown6 4s ease-in-out infinite;
+}
+.home-page-one-container .home-page-one-content h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FF7F63;
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.home-page-one-container .home-page-one-content h3 {
+  color: #141F39;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+  margin-bottom: 16px;
+  font-size: 54px;
+}
+.home-page-one-container .home-page-one-content p {
+  color: #525256;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 32px;
+  color: #525256;
+}
+.home-page-one-container .home-page-one-content ul {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.home-page-one-container .home-page-one-content ul li {
+  color: #141F39;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.home-page-one-container .home-page-one-content ul li span {
+  color: #FFF;
+  background-color: #6E65E5;
+  border-radius: 50%;
+  font-size: 10px;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+}
+.home-page-one-container .home-page-one-content a {
+  color: #fff;
+  background-color: #FF7F63;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.home-page-one-container .home-page-one-content a:hover {
+  background-color: #141F39;
+  transition: all 0.5s;
+}
+.home-page-one-container .home-page-one-content div {
+  position: absolute;
+  top: -350px;
+  right: -55px;
+  animation: moveUpDown5 4s ease-in-out infinite;
+}
+
+@keyframes moveUpDown5 {
+  0% {
+    top: -350px;
+    right: -50px;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+@keyframes moveUpDown6 {
+  0% {
+    left: -55px;
+  }
+  50% {
+    left: -40px;
+  }
+  100% {
+    left: -55px;
+  }
+}
+.work-process-container {
+  padding: 120px 0;
+}
+.work-process-container .work-heading {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.work-process-container .work-heading h4 {
+  color: #FF7F63;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.work-process-container .work-heading h3 {
+  font-size: 54px;
+  font-weight: 800;
+  font-family: "Urbanist", sans-serif;
+  color: #141F39;
+}
+.work-process-container .work-heading .animation {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  animation: moveUpDown7 3s ease-in-out infinite;
+}
+.work-process-container .work-heading .animation-2 {
+  position: absolute;
+  top: 105px;
+  right: 400px;
+  animation: moveUpDown8 3s ease-in-out infinite;
+}
+.work-process-container .work-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.work-process-container .work-content .work-card {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.work-process-container .work-content .work-card .arrow-1 {
+  position: absolute;
+  top: 44px;
+  right: -88px;
+}
+.work-process-container .work-content .work-card .arrow-2 {
+  position: absolute;
+  top: 75px;
+  right: -88px;
+}
+.work-process-container .work-content .work-card-icon {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #BBB8FF;
+  padding: 20px;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.work-process-container .work-content .work-card-icon h3 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+}
+.work-process-container .work-content .work-card-icon:hover {
+  background-color: #FF7F63;
+}
+.work-process-container .work-content h4 {
+  font-size: 24px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+}
+.work-process-container .work-content p {
+  color: #525256;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@keyframes moveUpDown7 {
+  0% {
+    top: -20px;
+  }
+  25% {
+    top: -10px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: -10px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+@keyframes moveUpDown8 {
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.2, 1);
+  }
+  40% {
+    transform: scale(1.05, 1);
+  }
+  60% {
+    transform: scale(1.3, 1);
+  }
+  80% {
+    transform: scale(1.2, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.project-container {
+  padding-bottom: 120px;
+}
+.project-container .project-content {
+  display: flex;
+  justify-content: space-around;
+}
+.project-container .project-content .project-heading h6 {
+  color: #FF7F63;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Urbanist", sans-serif;
+}
+.project-container .project-content .project-heading h3 {
+  font-size: 54px;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+}
+.project-container .project-content .project-btn {
+  align-self: self-end;
+  padding-bottom: 18px;
+}
+.project-container .project-content .project-btn a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FF7F63;
+  padding: 20px 32px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.project-container .project-content .project-btn a:hover {
+  background-color: #141F39;
+}
+.project-container .project-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 56px;
+}
+.project-container .project-card-content .project-card {
+  box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.2);
+  border-radius: 24px 10px;
+  overflow: hidden;
+  position: relative;
+}
+.project-container .project-card-content .project-card .card-content {
+  overflow: hidden;
+  width: 100%;
+}
+.project-container .project-card-content .project-card .card-content img {
+  transition: 0.5s;
+  overflow: hidden;
+}
+.project-container .project-card-content .project-card .card-content img:hover {
+  transform: scale(1.08);
+}
+.project-container .project-card-content .project-card h3 {
+  font-size: 24px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+  margin: 20px 0 20px 20px;
+}
+.project-container .project-card-content .project-card p {
+  font-size: 18px;
+  color: #525256;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 20px 20px;
+}
+.project-container .project-card-content .project-card .right-arrow {
+  position: absolute;
+  bottom: 83px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+}
+.project-container .project-card-content .project-card .right-arrow a {
+  background-color: #6E65E5;
+  padding: 20px 24px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.project-container .project-card-content .project-card .right-arrow a:hover {
+  background-color: #141F39;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #6E65E5;
+  color: #fff;
 }

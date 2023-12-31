@@ -1,0 +1,148 @@
+.work-process-container {
+    padding: 120px 0;
+
+    .work-heading {
+        text-align: center;
+        padding: 20px;
+        position: relative;
+
+        h4 {
+            color: $orangeColor;
+            font-weight: 700;
+            font-family: $headerFont;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 54px;
+            font-weight: 800;
+            font-family: $headerFont;
+            color: $primaryBtnColor;
+        }
+
+        .animation {
+            position: absolute;
+            top: 0;
+            left: 400px;
+            animation: moveUpDown7 3s ease-in-out infinite;
+        }
+
+        .animation-2 {
+            position: absolute;
+            top: 105px;
+            right: 400px;
+            animation: moveUpDown8 3s ease-in-out infinite;
+        }
+    }
+
+    .work-content {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    
+
+        .work-card {
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            gap: 16px;
+            position: relative;
+            .arrow-1 {
+                position: absolute;
+                top: 44px;
+                right: -88px;
+            }
+            .arrow-2 {
+                position: absolute;
+                top: 75px;
+                right: -88px;
+            }
+    
+        }
+
+        .work-card-icon {
+            display: block;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: #BBB8FF;
+            padding: 20px;
+            transition: all 0.5s ease-out;
+            cursor: pointer;
+            h3 {
+                font-size: 36px;
+                font-weight: 700;
+                font-family: $headerFont;
+
+            }
+            &:hover {
+                background-color: $orangeColor;
+              
+            }
+        }
+        h4 {
+            font-size: 24px;
+            font-family: $headerFont;
+            font-weight: 700;
+        }
+        p {
+            color: $grayColor;
+            font-size: 18px;
+            font-family: $secondaryFont;
+        }
+   
+    }
+}
+
+@keyframes moveUpDown7 {
+    0% {
+        top: -20px;
+    }
+
+    25% {
+        top: -10px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    75% {
+        top: -10px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+@keyframes moveUpDown8 {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    20% {
+        transform: scale(1.2, 1);
+    }
+
+    40% {
+        transform: scale(1.05, 1);
+    }
+
+    60% {
+        transform: scale(1.3, 1);
+    }
+
+    80% {
+        transform: scale(1.2, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
