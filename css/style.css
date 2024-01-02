@@ -781,6 +781,7 @@
 }
 .team-members-container .team-members-article {
   position: relative;
+  padding-bottom: 56px;
 }
 .team-members-container .team-members-article h6 {
   color: #FF7F63;
@@ -813,6 +814,57 @@
   right: -340px;
   animation: moveUpDown9 3s ease-in-out infinite;
 }
+.team-members-container .team-members-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-direction: row;
+}
+.team-members-container .team-members-content .team-members-card {
+  transition: 0.5s;
+  position: relative;
+}
+.team-members-container .team-members-content .team-members-card:hover .card-name {
+  transform: scale(1);
+}
+.team-members-container .team-members-content .team-members-card .team-member-img {
+  overflow: hidden;
+  border-radius: 24px;
+}
+.team-members-container .team-members-content .team-members-card .team-member-img img {
+  background-color: #E8E8E8;
+  border-radius: 24px;
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.team-members-container .team-members-content .team-members-card .team-member-img img:hover {
+  transform: scale(1.05);
+}
+.team-members-container .team-members-content .team-members-card .card-name {
+  background-color: #6E65E5;
+  color: #fff;
+  padding: 15px 40px;
+  text-align: center;
+  border-radius: 24px;
+  position: absolute;
+  bottom: -35px;
+  left: 42px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.team-members-container .team-members-content .team-members-card .card-name h5 {
+  font-size: 24px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+}
+.team-members-container .team-members-content .team-members-card .card-name p {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
 @keyframes moveUpDown9 {
   0% {
     top: 70px;
