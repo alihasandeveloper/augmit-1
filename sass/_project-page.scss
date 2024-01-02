@@ -51,64 +51,72 @@
         margin-top: 56px;
 
         .project-card {
-            box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.20);
-            border-radius: 24px 10px;
             overflow: hidden;
-            position: relative;
+            box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.20);
+            border-radius: 24px 24px 15px 15px;
+            // &:hover {
+            //     .card-img {
+            //         a {
+            //             visibility: visible;
+            //             margin-right: 1px;
+            //         }
+            //     }
+            // }
 
-
-            .card-content {
-
+            .card-img {
+                height: 270px;
                 overflow: hidden;
-                width: 100%;
-                // height: 270px;
+
                 img {
-                  
-                    transition: 0.5s;
-                    overflow: hidden;
-                    &:hover {
-                        transform: scale(1.08);
-                    }
-                }
-
-            }
-
-            h3 {
-                font-size: 24px;
-                font-family: $headerFont;
-                font-weight: 800;
-                margin: 20px 0 20px 20px;
-            }
-
-            p {
-                font-size: 18px;
-                color: $grayColor;
-                font-family: $secondaryFont;
-                margin: 0 0 20px 20px;
-            }
-
-            .right-arrow {
-                position: absolute;
-                bottom: 83px;
-                right: 40px;
-                width: 50px;
-                height: 50px;
-
-                a {
-                    background-color: $hoverColor;
-                    padding: 20px 24px;
-                    border-radius: 50%;
-                    color: #fff;
-                    font-size: 20px;
+                    width: 100%;
                     transition: all 0.5s;
 
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .card-article {
+                padding: 32px;
+                position: relative;
+                &:hover {
+                    a {
+                        visibility: visible;
+                        margin-right: 1px;
+                    }
+                }
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: $headerFont;
+                    margin-bottom: 16px;
+                }
+                p {
+                    color: #525256;
+                    font-size: 18px;
+                    font-family: $secondaryFont;
+                }
+                a {
+                    color: #fff;
+                    background-color: $hoverColor;
+                    padding: 14px 18px;
+                    font-size: 24px;
+                    border-radius: 100%;
+                    height: 50px;
+                    width: 50px;
+                    display: block;
+                    transition: 0.5s;
+                    position: absolute;
+                    top: -25px;
+                    right: 35px;
+                    margin-right: -86px;
+                    visibility: hidden;
                     &:hover {
                         background-color: $primaryBtnColor;
                     }
                 }
             }
-
-
         }
     }
 }

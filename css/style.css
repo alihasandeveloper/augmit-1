@@ -719,53 +719,117 @@
   margin-top: 56px;
 }
 .project-container .project-card-content .project-card {
+  overflow: hidden;
   box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.2);
-  border-radius: 24px 10px;
-  overflow: hidden;
-  position: relative;
+  border-radius: 24px 24px 15px 15px;
 }
-.project-container .project-card-content .project-card .card-content {
+.project-container .project-card-content .project-card .card-img {
+  height: 270px;
   overflow: hidden;
+}
+.project-container .project-card-content .project-card .card-img img {
   width: 100%;
-}
-.project-container .project-card-content .project-card .card-content img {
-  transition: 0.5s;
-  overflow: hidden;
-}
-.project-container .project-card-content .project-card .card-content img:hover {
-  transform: scale(1.08);
-}
-.project-container .project-card-content .project-card h3 {
-  font-size: 24px;
-  font-family: "Urbanist", sans-serif;
-  font-weight: 800;
-  margin: 20px 0 20px 20px;
-}
-.project-container .project-card-content .project-card p {
-  font-size: 18px;
-  color: #525256;
-  font-family: "Open Sans", sans-serif;
-  margin: 0 0 20px 20px;
-}
-.project-container .project-card-content .project-card .right-arrow {
-  position: absolute;
-  bottom: 83px;
-  right: 40px;
-  width: 50px;
-  height: 50px;
-}
-.project-container .project-card-content .project-card .right-arrow a {
-  background-color: #6E65E5;
-  padding: 20px 24px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 20px;
   transition: all 0.5s;
 }
-.project-container .project-card-content .project-card .right-arrow a:hover {
+.project-container .project-card-content .project-card .card-img img:hover {
+  transform: scale(1.05);
+}
+.project-container .project-card-content .project-card .card-article {
+  padding: 32px;
+  position: relative;
+}
+.project-container .project-card-content .project-card .card-article:hover a {
+  visibility: visible;
+  margin-right: 1px;
+}
+.project-container .project-card-content .project-card .card-article h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 16px;
+}
+.project-container .project-card-content .project-card .card-article p {
+  color: #525256;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+.project-container .project-card-content .project-card .card-article a {
+  color: #fff;
+  background-color: #6E65E5;
+  padding: 14px 18px;
+  font-size: 24px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  top: -25px;
+  right: 35px;
+  margin-right: -86px;
+  visibility: hidden;
+}
+.project-container .project-card-content .project-card .card-article a:hover {
   background-color: #141F39;
 }
 
+.team-members-container {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-members-container .team-members-article {
+  position: relative;
+}
+.team-members-container .team-members-article h6 {
+  color: #FF7F63;
+  font-size: 18px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.team-members-container .team-members-article h3 {
+  color: #141F39;
+  font-size: 54px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.team-members-container .team-members-article p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.team-members-container .team-members-article .animation-1 {
+  position: absolute;
+  top: 80px;
+  left: -340px;
+  animation: moveUpDown8 3s ease-in-out infinite;
+}
+.team-members-container .team-members-article .animation-2 {
+  position: absolute;
+  top: 77px;
+  right: -340px;
+  animation: moveUpDown9 3s ease-in-out infinite;
+}
+@keyframes moveUpDown9 {
+  0% {
+    top: 70px;
+  }
+  25% {
+    top: 95px;
+  }
+  50% {
+    top: 80px;
+  }
+  75% {
+    top: 95px;
+  }
+  100% {
+    top: 70px;
+  }
+}
 *, *::after, *::before {
   margin: 0;
   padding: 0;
