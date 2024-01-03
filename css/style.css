@@ -1209,27 +1209,27 @@
 .blog-container {
   padding: 120px 0;
 }
-.blog-container .project-content {
+.blog-container .blog-content .project-content {
   display: flex;
   justify-content: space-around;
 }
-.blog-container .project-content .project-heading h6 {
+.blog-container .blog-content .project-content .project-heading h6 {
   color: #FF7F63;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
   font-family: "Urbanist", sans-serif;
 }
-.blog-container .project-content .project-heading h3 {
+.blog-container .blog-content .project-content .project-heading h3 {
   font-size: 54px;
   font-weight: 700;
   font-family: "Urbanist", sans-serif;
 }
-.blog-container .project-content .project-btn {
+.blog-container .blog-content .project-content .project-btn {
   align-self: self-end;
   padding-bottom: 18px;
 }
-.blog-container .project-content .project-btn a {
+.blog-container .blog-content .project-content .project-btn a {
   color: #fff;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
@@ -1239,8 +1239,47 @@
   border-radius: 50px;
   transition: all 0.5s;
 }
-.blog-container .project-content .project-btn a:hover {
+.blog-container .blog-content .project-content .project-btn a:hover {
   background-color: #141F39;
+}
+.blog-container .blog-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.blog-container .blog-card-content .blog-card {
+  border: 1px solid;
+  border-radius: 0px 0px 24px 24px;
+  box-shadow: 12px 12px 50px 0px rgba(175, 186, 221, 0.2);
+}
+.blog-container .blog-card-content .blog-card .card-text {
+  padding: 40px;
+}
+.blog-container .blog-card-content .blog-card .card-text h6 {
+  display: inline-block;
+  background: #BBB8FF;
+  color: #525256;
+  padding: 4px 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 50px;
+}
+.blog-container .blog-card-content .blog-card .card-text p {
+  font-size: 24px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+}
+.blog-container .blog-card-content .blog-card .card-text .blog-comment {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+.blog-container .blog-card-content .blog-multi-cards .blog-multi-card {
+  display: flex;
+  border: 1px solid;
+  border-radius: 24px;
 }
 
 *, *::after, *::before {
