@@ -6,8 +6,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .plan-article {
         text-align: center;
+
         h6 {
             color: $orangeColor;
             font-size: 18px;
@@ -15,32 +17,39 @@
             font-family: $headerFont;
             margin-bottom: 16px;
         }
+
         h3 {
             font-size: 54px;
             font-weight: 700;
             font-family: $headerFont;
         }
     }
+
     .plan-content {
         margin-top: 32px;
+
         .plan-time {
             display: flex;
+            justify-content: center;
             align-items: center;
             gap: 20px;
-             p {
+            margin-bottom: 59px;
+
+            p {
                 font-size: 20px;
                 font-family: $secondaryFont;
                 color: gray;
                 font-weight: 600;
-             }
-             .plan-btn {
+            }
 
-                input[type=checkbox]{
+            .plan-btn {
+
+                input[type=checkbox] {
                     height: 0;
                     width: 0;
                     display: none;
                 }
-                
+
                 label {
                     cursor: pointer;
                     width: 80px;
@@ -50,7 +59,7 @@
                     border-radius: 50px;
                     position: relative;
                 }
-                
+
                 label:after {
                     content: '';
                     position: absolute;
@@ -62,25 +71,349 @@
                     border-radius: 50px;
                     transition: 0.4s;
                 }
-                
-                input:checked + label {
+
+                input:checked+label {
                     background: #6E65E5;
                 }
-                
-                input:checked + label:after {
+
+                input:checked+label:after {
                     left: calc(100% - 5px);
                     transform: translateX(-100%);
                 }
-                
+
                 label:active:after {
                     width: 70px;
                 }
-                
-             }
-             
-            
+
+            }
+
+
 
         }
+
+        .plan-card-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+            .plan-card {
+                padding: 40px;
+                text-align: center;
+                background: #fff;
+                border-radius: 24px;
+                border: 1px solid #D6D6D6;
+                transition: all 0.5s ease-out;
+
+                h6 {
+                    font-size: 18px;
+                    font-family: $headerFont;
+                    line-height: 32px;
+                    padding: 8px 30px;
+                    background-color: #f9f9f9;
+                    border-radius: 50px;
+                    margin-bottom: 24px;
+                    color: $primaryBtnColor;
+                    letter-spacing: 1.1px;
+                    display: inline-block;
+                    border: 1px solid;
+                }
+
+                h3 {
+                    font-size: 54px;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-family: $secondaryFont;
+                    line-height: 32px;
+                    color: $grayColor;
+                }
+
+                hr {
+                    color: $grayColor;
+                    margin: 40px 0;
+                }
+
+                .plan-card-check-list {
+                    ul {
+                        list-style: none;
+                        text-align: center;
+                        padding: 0 30px;
+                        margin-bottom: 40px;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            font-size: 18px;
+                            font-family: $secondaryFont;
+                            font-weight: 500;
+                            color: $grayColor;
+                            text-align: start;
+                            margin-bottom: 8px;
+
+                            span {
+                                color: #fff;
+                                background-color: $primaryBtnColor;
+                                font-size: 10px;
+                                padding: 5px 7px;
+                                border-radius: 50%;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .plan-btn {
+                    button {
+                        padding: 20px 100px;
+                        border: 1px solid $grayColor;
+                        border-radius: 50px;
+                        background-color: #fff;
+                        cursor: pointer;
+
+
+                        a {
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-weight: $secondaryFont;
+                            line-height: 36px;
+                            text-decoration: none;
+                            color: $primaryBtnColor;
+
+                        }
+                    }
+                }
+
+                &:hover {
+                  
+                    background: $hoverColor;
+           
+                    border: 1px solid #D6D6D6;
+
+                    h6 {
+                        color: #6E65E5;
+                        letter-spacing: 1.1px;
+                    }
+
+                    h3 {
+                      
+                        color: #fff;
+                    }
+
+                    p {
+                        
+                        color: #fff;
+                    }
+
+                    hr {
+                        color: #fff;
+                        
+                    }
+
+                    .plan-card-check-list {
+                        ul {
+                            
+
+                            li {
+                               
+                                color: #fff;
+                                span {
+                                    color: $hoverColor;
+                                    background-color: #fff;
+                                    ;
+                                  
+                                }
+                            }
+                        }
+                    }
+
+                    .plan-btn {
+                        cursor: pointer;
+                        button {
+                            border: 1px solid #fff;
+                            cursor: pointer;
+                            transition: 0.5s;
+                            &:hover {
+                                background-color: #000;
+                                border: 1px solid transparent;
+                                a {
+                                    color: #fff;
+                                }
+                            }
+
+                            a {
+                               
+                                text-decoration: none;
+                                color: #6E65E5;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            #spacial {
+                padding: 40px;
+                text-align: center;
+                background: $hoverColor;
+                border-radius: 24px;
+                border: 1px solid #D6D6D6;
+                transition: all 0.5s ease;
+
+                h6 {
+                    font-size: 18px;
+                    font-family: $headerFont;
+                    line-height: 32px;
+                    padding: 8px 30px;
+                    background-color: #fff;
+                    border-radius: 50px;
+                    margin-bottom: 24px;
+                    color: #6E65E5;
+                    letter-spacing: 1.1px;
+                    display: inline-block;
+                    border: 1px solid;
+                }
+
+                h3 {
+                    font-size: 54px;
+                    font-family: $headerFont;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                    color: #fff;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-family: $secondaryFont;
+                    line-height: 32px;
+                    color: #fff;
+                }
+
+                hr {
+                    color: #fff;
+                    margin: 40px 0;
+                }
+
+                .plan-card-check-list {
+                    ul {
+                        list-style: none;
+                        text-align: center;
+                        padding: 0 30px;
+                        margin-bottom: 40px;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            font-size: 18px;
+                            font-family: $secondaryFont;
+                            font-weight: 500;
+                            color: #fff;
+                            text-align: start;
+                            margin-bottom: 8px;
+
+                            span {
+                                color: $hoverColor;
+                                background-color: #fff;
+                                ;
+                                font-size: 10px;
+                                padding: 5px 7px;
+                                border-radius: 50%;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .plan-btn {
+                    cursor: pointer;
+                    button {
+                        padding: 20px 100px;
+                        border: 1px solid #6E65E5;
+                        border-radius: 50px;
+                        background-color: #fff;
+                        cursor: pointer;
+
+                        a {
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-weight: $secondaryFont;
+                            line-height: 36px;
+                            text-decoration: none;
+                            color: #6E65E5;
+
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: #fff;
+                    border: 1px solid #D6D6D6;
+
+
+                    h6 {
+                        background-color: #f9f9f9;
+                        color: $primaryBtnColor;
+                        border: 1px solid;
+                    }
+
+                    h3 {
+                        color: $primaryBtnColor;
+                    }
+
+                    p {
+                        color: $grayColor;
+                    }
+
+                    hr {
+                        color: $grayColor;
+                        margin: 40px 0;
+                    }
+
+                    .plan-card-check-list {
+                        ul {
+                    
+
+                            li {
+                                color: $grayColor;
+
+                                span {
+                                    color: #fff;
+                                    background-color: $primaryBtnColor;
+                                    
+                                }
+                            }
+                        }
+                    }
+
+                    .plan-btn {
+                        button {
+                           border: 1px solid #000;
+                            background-color: #fff;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+                            a {
+                                color: $primaryBtnColor;
+
+                            }
+                            &:hover {
+                                border: 1px solid transparent;
+                            background: #6E65E5;
+                            a {
+                                color: #fff;
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
     }
 
 }
