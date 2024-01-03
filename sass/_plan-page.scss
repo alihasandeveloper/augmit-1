@@ -1,0 +1,86 @@
+.plan-container {
+    padding: 120px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .plan-article {
+        text-align: center;
+        h6 {
+            color: $orangeColor;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: $headerFont;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-size: 54px;
+            font-weight: 700;
+            font-family: $headerFont;
+        }
+    }
+    .plan-content {
+        margin-top: 32px;
+        .plan-time {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+             p {
+                font-size: 20px;
+                font-family: $secondaryFont;
+                color: gray;
+                font-weight: 600;
+             }
+             .plan-btn {
+
+                input[type=checkbox]{
+                    height: 0;
+                    width: 0;
+                    display: none;
+                }
+                
+                label {
+                    cursor: pointer;
+                    width: 80px;
+                    height: 40px;
+                    background: lightgrey;
+                    display: block;
+                    border-radius: 50px;
+                    position: relative;
+                }
+                
+                label:after {
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    width: 30px;
+                    height: 30px;
+                    background: #fff;
+                    border-radius: 50px;
+                    transition: 0.4s;
+                }
+                
+                input:checked + label {
+                    background: #6E65E5;
+                }
+                
+                input:checked + label:after {
+                    left: calc(100% - 5px);
+                    transform: translateX(-100%);
+                }
+                
+                label:active:after {
+                    width: 70px;
+                }
+                
+             }
+             
+            
+
+        }
+    }
+
+}
