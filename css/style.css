@@ -55,10 +55,9 @@
   transition: all 0.5s;
 }
 .navber .nav-menu ul .dropdown-content:hover {
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 .navber .nav-menu ul .dropdown-content:hover .dropdown-menu {
-  transition: all 0.5s ease-in-out;
   visibility: visible;
 }
 .navber .nav-menu ul .dropdown-content .dropdown-menu {
@@ -75,9 +74,9 @@
 }
 .navber .nav-menu ul .dropdown-content .dropdown-menu li a {
   margin-left: -12px;
-  transition: all 0.5s ease-in-out;
 }
 .navber .nav-menu ul .dropdown-content .dropdown-menu li ::before {
+  transition: all 0.5s ease-in-out;
   content: "-";
   visibility: hidden;
   opacity: 0;
