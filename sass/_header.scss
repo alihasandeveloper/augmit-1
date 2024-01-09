@@ -31,38 +31,64 @@
     .nav-menu {
         ul {
             display: flex;
+            list-style: none;
             gap: 32px;
 
             li {
-                list-style: none;
-
                 a {
+                    font-size: 20px;
+                    color: $grayColor;
+                    font-family: $headerFont;
                     text-decoration: none;
-                    font-size: 18px;
-                    font-family: $secondaryFont;
-                    color: #141F39;
-                }
+                    font-weight: 500;
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    letter-spacing: 1.1px;
 
+                    span {
+                        transition: 0.5s;
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        color: $hoverColor;
+
+                        span {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
             }
 
-            .dropdown-menu {
+            .dropdown-content {
                 position: relative;
+                transition: all 0.5s;
                 &:hover {
-                    .dropdown-content {
+                    .dropdown-menu {
                         visibility: visible;
-                        transition: 0.5s;
                     }
                 }
 
-                .dropdown-content {
+                .dropdown-menu {
                     position: absolute;
-                    top: 45px;
-                    background-color: #ff3f34;
-                    width: 110px;
-                    display: none;
-                    padding: 20px;
-                    // visibility: hidden;
-
+                    display: block;
+                    width: 270px;
+                    visibility: hidden;
+                    top: 20px;
+                    padding-top: 20px;
+                    li {
+                        padding: 20px;
+                        background-color: #fff;
+                    
+                        &:hover {
+                            transition: 0.5s;
+                            ::before {
+                                content: "-";
+                            }
+                        }
+                        
+                    }
                 }
             }
         }

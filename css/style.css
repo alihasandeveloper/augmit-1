@@ -26,31 +26,54 @@
 }
 .navber .nav-menu ul {
   display: flex;
+  list-style: none;
   gap: 32px;
 }
-.navber .nav-menu ul li {
-  list-style: none;
-}
 .navber .nav-menu ul li a {
+  font-size: 20px;
+  color: #525256;
+  font-family: "Urbanist", sans-serif;
   text-decoration: none;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  color: #141F39;
+  font-weight: 500;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  letter-spacing: 1.1px;
 }
-.navber .nav-menu ul .dropdown-menu {
+.navber .nav-menu ul li a span {
+  transition: 0.5s;
+  font-size: 16px;
+}
+.navber .nav-menu ul li a:hover {
+  color: #6E65E5;
+}
+.navber .nav-menu ul li a:hover span {
+  transform: rotate(180deg);
+}
+.navber .nav-menu ul .dropdown-content {
   position: relative;
+  transition: all 0.5s;
 }
-.navber .nav-menu ul .dropdown-menu:hover .dropdown-content {
+.navber .nav-menu ul .dropdown-content:hover .dropdown-menu {
   visibility: visible;
+}
+.navber .nav-menu ul .dropdown-content .dropdown-menu {
+  position: absolute;
+  display: block;
+  width: 270px;
+  visibility: hidden;
+  top: 20px;
+  padding-top: 20px;
+}
+.navber .nav-menu ul .dropdown-content .dropdown-menu li {
+  padding: 20px;
+  background-color: #fff;
+}
+.navber .nav-menu ul .dropdown-content .dropdown-menu li:hover {
   transition: 0.5s;
 }
-.navber .nav-menu ul .dropdown-menu .dropdown-content {
-  position: absolute;
-  top: 45px;
-  background-color: #ff3f34;
-  width: 110px;
-  display: none;
-  padding: 20px;
+.navber .nav-menu ul .dropdown-content .dropdown-menu li:hover ::before {
+  content: "-";
 }
 .navber .nav-btn {
   background-color: #141F39;
