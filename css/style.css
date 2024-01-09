@@ -1439,6 +1439,8 @@
   align-items: center;
   padding: 72px 0 50px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5725490196);
+  position: relative;
+  z-index: 12;
 }
 .footer .footer-content h3 {
   font-size: 44px;
@@ -1529,6 +1531,8 @@
   top: -50px;
   left: -40px;
   animation: moveUpDown5 4s ease-in-out infinite;
+  overflow: hidden;
+  z-index: 1;
 }
 
 *, *::after, *::before {
