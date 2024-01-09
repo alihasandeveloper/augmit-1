@@ -7,57 +7,73 @@
     align-items: center;
     padding: 24px 0;
     background-repeat: no-repeat;
-    position: sticky;
+    position: relative;
+    z-index: 1000;
+
     .nav-logo {
         display: flex;
         align-items: center;
         gap: 12px;
         cursor: pointer;
+
         img {
             height: 48px;
             width: 48px;
         }
+
         h2 {
             font-size: 36px;
             font-weight: 800;
             font-family: $headerFont;
         }
     }
+
     .nav-menu {
         ul {
             display: flex;
             gap: 32px;
+
             li {
                 list-style: none;
-                position: relative;
-               
+
                 a {
                     text-decoration: none;
                     font-size: 18px;
                     font-family: $secondaryFont;
                     color: #141F39;
                 }
+
+            }
+
+            .dropdown-menu {
+                position: relative;
+                &:hover {
+                    .dropdown-content {
+                        visibility: visible;
+                        transition: 0.5s;
+                    }
+                }
+
                 .dropdown-content {
                     position: absolute;
-                    top: 0;
-                    width: 150px;
-                    display: block;
-                    border: 2px solid;
-                    padding: 20px 0 0 0;
+                    top: 45px;
+                    background-color: #ff3f34;
+                    width: 110px;
+                    display: none;
+                    padding: 20px;
+                    // visibility: hidden;
 
-                   
-                    li {
-                        
-                    }
                 }
             }
         }
     }
+
     .nav-btn {
         background-color: $primaryBtnColor;
         padding: 20px 32px;
         border-radius: 50px;
         transition: 0.5s;
+
         a {
             color: #fff;
             text-decoration: none;
@@ -69,7 +85,7 @@
         &:hover {
             background-color: $hoverColor;
             transition: 0.5s;
-            
+
         }
     }
 

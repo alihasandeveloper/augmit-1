@@ -6,7 +6,8 @@
   align-items: center;
   padding: 24px 0;
   background-repeat: no-repeat;
-  position: sticky;
+  position: relative;
+  z-index: 1000;
 }
 .navber .nav-logo {
   display: flex;
@@ -29,7 +30,6 @@
 }
 .navber .nav-menu ul li {
   list-style: none;
-  position: relative;
 }
 .navber .nav-menu ul li a {
   text-decoration: none;
@@ -37,13 +37,20 @@
   font-family: "Open Sans", sans-serif;
   color: #141F39;
 }
-.navber .nav-menu ul li .dropdown-content {
+.navber .nav-menu ul .dropdown-menu {
+  position: relative;
+}
+.navber .nav-menu ul .dropdown-menu:hover .dropdown-content {
+  visibility: visible;
+  transition: 0.5s;
+}
+.navber .nav-menu ul .dropdown-menu .dropdown-content {
   position: absolute;
-  top: 0;
-  width: 150px;
-  display: block;
-  border: 2px solid;
-  padding: 20px 0 0 0;
+  top: 45px;
+  background-color: #ff3f34;
+  width: 110px;
+  display: none;
+  padding: 20px;
 }
 .navber .nav-btn {
   background-color: #141F39;
