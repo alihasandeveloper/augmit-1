@@ -1,5 +1,4 @@
 .navber {
-    // background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -65,7 +64,9 @@
                 position: relative;
                 transition: all 0.5s;
                 &:hover {
+                    transition:  all 0.5s;
                     .dropdown-menu {
+                        transition:  all 0.5s ease-in-out;
                         visibility: visible;
                     }
                 }
@@ -80,11 +81,25 @@
                     li {
                         padding: 20px;
                         background-color: #fff;
-                    
+                        a{
+                            margin-left: -12px; 
+                            transition: all 0.5s ease-in-out;
+                        }
+                        ::before {
+                            content: "-";
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all 0.5s ease-in-out;
+                        }
                         &:hover {
-                            transition: 0.5s;
+                            a{
+                                margin-left: 0;
+                                transition: all 0.5s ease-in-out;
+                            }
                             ::before {
-                                content: "-";
+                                visibility: visible;
+                                opacity: 1;
+                                transition: all 0.5s ease-in-out;
                             }
                         }
                         

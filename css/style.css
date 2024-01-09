@@ -54,7 +54,11 @@
   position: relative;
   transition: all 0.5s;
 }
+.navber .nav-menu ul .dropdown-content:hover {
+  transition: all 0.5s;
+}
 .navber .nav-menu ul .dropdown-content:hover .dropdown-menu {
+  transition: all 0.5s ease-in-out;
   visibility: visible;
 }
 .navber .nav-menu ul .dropdown-content .dropdown-menu {
@@ -69,11 +73,24 @@
   padding: 20px;
   background-color: #fff;
 }
-.navber .nav-menu ul .dropdown-content .dropdown-menu li:hover {
-  transition: 0.5s;
+.navber .nav-menu ul .dropdown-content .dropdown-menu li a {
+  margin-left: -12px;
+  transition: all 0.5s ease-in-out;
+}
+.navber .nav-menu ul .dropdown-content .dropdown-menu li ::before {
+  content: "-";
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.navber .nav-menu ul .dropdown-content .dropdown-menu li:hover a {
+  margin-left: 0;
+  transition: all 0.5s ease-in-out;
 }
 .navber .nav-menu ul .dropdown-content .dropdown-menu li:hover ::before {
-  content: "-";
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 .navber .nav-btn {
   background-color: #141F39;
