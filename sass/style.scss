@@ -18,6 +18,7 @@ $grayColor: #525256;
 @import "team-members-page";
 @import "plan-page";
 @import "blog-page";
+@import "footer-page";
 
 
 
@@ -29,6 +30,12 @@ $grayColor: #525256;
 *::selection {
     background-color: #6E65E5;
     color: #fff;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 

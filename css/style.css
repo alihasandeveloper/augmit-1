@@ -1,4 +1,6 @@
 .navber {
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -35,6 +37,14 @@
   font-family: "Open Sans", sans-serif;
   color: #141F39;
 }
+.navber .nav-menu ul li .dropdown-content {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  display: block;
+  border: 2px solid;
+  padding: 20px 0 0 0;
+}
 .navber .nav-btn {
   background-color: #141F39;
   padding: 20px 32px;
@@ -53,6 +63,11 @@
   transition: 0.5s;
 }
 
+.responsive {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .responsive .slick-arrow {
   position: absolute;
   top: 50%;
@@ -295,7 +310,7 @@
   display: flex;
   gap: 64px;
   border-left: 1px solid rgba(255, 255, 255, 0.15);
-  padding-left: 150px;
+  padding-left: 180px;
 }
 .rating-container .rating-star div h2 {
   color: #fff;
@@ -315,8 +330,11 @@
   display: flex;
   gap: 8px;
 }
-.rating-container .rating-star div div a {
+.rating-container .rating-star div div ul {
   color: #FDD540;
+  list-style: none;
+  display: flex;
+  gap: 8px;
 }
 
 .service-container {
@@ -496,16 +514,23 @@
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 .home-page-one-container .home-page-one-content ul li span {
-  color: #FFF;
-  background-color: #6E65E5;
-  border-radius: 50%;
+  font-family: "Font Awesome 6 Pro";
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #6E65E5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 10px;
+  line-height: 28px;
   margin-right: 10px;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
 }
 .home-page-one-container .home-page-one-content a {
   color: #fff;
@@ -526,7 +551,7 @@
   position: absolute;
   top: -350px;
   right: -55px;
-  animation: moveUpDown5 4s ease-in-out infinite;
+  animation: moveUpDown5 5s ease-in-out infinite;
 }
 
 @keyframes moveUpDown5 {
@@ -852,7 +877,7 @@
   border-radius: 24px;
   position: absolute;
   bottom: -35px;
-  left: 42px;
+  left: 40px;
   transform: scale(0);
   transition: 0.5s;
 }
@@ -860,6 +885,7 @@
   font-size: 24px;
   font-family: "Urbanist", sans-serif;
   font-weight: 700;
+  letter-spacing: 1.1px;
 }
 .team-members-container .team-members-content .team-members-card .card-name p {
   font-size: 18px;
@@ -1019,12 +1045,19 @@
   margin-bottom: 8px;
 }
 .plan-container .plan-content .plan-card-content .plan-card .plan-card-check-list ul li span {
-  color: #fff;
-  background-color: #141F39;
-  font-size: 10px;
-  padding: 5px 7px;
-  border-radius: 50%;
-  margin-right: 8px;
+  font-family: "Font Awesome 6 Pro";
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #6E65E5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 28px;
+  margin-right: 10px;
 }
 .plan-container .plan-content .plan-card-content .plan-card .plan-btn button {
   padding: 20px 100px;
@@ -1139,12 +1172,20 @@
   margin-bottom: 8px;
 }
 .plan-container .plan-content .plan-card-content #spacial .plan-card-check-list ul li span {
+  font-family: "Font Awesome 6 Pro";
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #fff;
   color: #6E65E5;
-  background-color: #fff;
-  font-size: 10px;
-  padding: 5px 7px;
-  border-radius: 50%;
-  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 28px;
+  margin-right: 10px;
 }
 .plan-container .plan-content .plan-card-content #spacial .plan-btn {
   cursor: pointer;
@@ -1373,6 +1414,123 @@
   transform: scale(1.1);
 }
 
+.footer {
+  background-color: #5F54D3;
+  padding: 0 312px;
+  position: relative;
+  overflow: hidden;
+}
+.footer p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+.footer h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.1px;
+  font-family: "Urbanist", sans-serif;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 72px 0 50px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5725490196);
+}
+.footer .footer-content h3 {
+  font-size: 44px;
+  font-family: "Urbanist", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.footer .footer-content form {
+  position: relative;
+}
+.footer .footer-content form .footer-email input {
+  padding: 24px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #525256;
+  border: none;
+  border-radius: 50px;
+  width: 498px;
+  outline: none;
+}
+.footer .footer-content form .footer-email-submit .submit-btn {
+  background-color: #141F39;
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 0;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.footer .footer-content form .footer-email-submit .submit-btn:hover {
+  background-color: #5F54D3;
+}
+.footer .footer-address {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5725490196);
+  padding: 72px 0 50px 0;
+}
+.footer .footer-address-logo .footer-logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer .footer-address-logo .footer-logo h3 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  margin-bottom: 16px;
+}
+.footer .footer-rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.footer .footer-rights ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.footer .footer-rights ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer .footer-rights ul li a:hover {
+  color: #141F39;
+}
+.footer .star {
+  position: absolute;
+  opacity: 50%;
+  top: 0;
+  right: 0;
+}
+.footer .animiton-4 {
+  position: absolute;
+  top: -50px;
+  left: -40px;
+  animation: moveUpDown5 4s ease-in-out infinite;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -1382,4 +1540,10 @@
 *::selection {
   background-color: #6E65E5;
   color: #fff;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }

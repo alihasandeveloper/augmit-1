@@ -1,4 +1,7 @@
 .responsive {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     .slick-arrow {
         position: absolute;
         top: 50%;
@@ -48,7 +51,6 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap-reverse;
-    // background-image: url(/Image/bg/bg-1.png);
     background-position: center;
     background-repeat: no-repeat;
     padding: 100px 0 82px 0;
